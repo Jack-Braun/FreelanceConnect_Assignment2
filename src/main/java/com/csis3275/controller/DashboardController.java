@@ -21,6 +21,7 @@ public class DashboardController {
 	public String Dashboard(Model model)
 	{
 		model.addAttribute("jack",jack);
+		model.addAttribute("brent",brent);
 		model.addAttribute("dash", dash);
 		return "dashboard";
 	}
