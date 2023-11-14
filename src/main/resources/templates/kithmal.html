@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>About Kithmal</title>
+<style>
+	table td {
+		vertical-align: top;
+	}
+
+	table td:first-child {
+		width: 400px;
+	}
+	img {
+		width: 250px;
+		height: 250px;
+		object-fit: cover;
+	}
+</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td th:text="${kithmal.bio}"></td>
+			<td><img th:src="@{'/'+${kithmal.img}}" /></td>
+		</tr>
+	</table>
+</body>
+</html>
