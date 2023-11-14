@@ -1,6 +1,6 @@
 package com.csis3275.model;
 
-public class JackFreelanceConnect {
+public class Jack_FREELANCECONNECT {
 	String bio;
 	String img;
 	
@@ -16,7 +16,7 @@ public class JackFreelanceConnect {
 	public void setImg(String img) {
 		this.img = img;
 	}
-	public JackFreelanceConnect(String bio, String img) {
+	public Jack_FREELANCECONNECT(String bio, String img) {
 		super();
 		this.bio = bio;
 		this.img = img;

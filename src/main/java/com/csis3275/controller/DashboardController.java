@@ -9,7 +9,7 @@ import com.csis3275.model.*;
 @Controller
 public class DashboardController {
 	
-	JackFreelanceConnect jack = new JackFreelanceConnect("My name is Jack i was born in canada. I like playing video games, skiing and taking my two dogs on walks.","IMG_6924.jpg");
+	Jack_FREELANCECONNECT jack = new Jack_FREELANCECONNECT("My name is Jack i was born in canada. I like playing video games, skiing and taking my two dogs on walks.","IMG_6924.jpg");
 	
 	DashboardModel dash = new DashboardModel("Freelance connect is an application meant to make communication between freelancers and employers easier");
 	
