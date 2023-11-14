@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Brent Bio</title>
+</head>
+<body>
+<h1>Freelance Connect</h1>
+	<img src="brent.jpg" alt="brent" style="width:200px; height:450;">
+	<table>
+		<tr>
+			<td th:text="${brent.bio}"></td>
+			<td><img th:src="@{'/'+${brent.img}}" style="width:200px; height:450;" /></td>
+		</tr>
+	</table>
+</body>
+</html>
