@@ -12,13 +12,16 @@ public class DashboardController {
 	Jack_FREELANCECONNECT jack = new Jack_FREELANCECONNECT("My name is Jack i was born in canada. I like playing video games, skiing and taking my two dogs on walks.","Jack.jpg");
 	
 	Kithmal_FREELANCECONNECT kithmal = new Kithmal_FREELANCECONNECT("I'm Kithmal. A student studying CSIS-Cybersecurity at Douglas College. I am new to Canada and it has been a wonderful experience here so far.", "Kithmal.jpg");
-	
+
+	Brent_FREELANCECONNECT brent = new Brent_FREELANCECONNECT("I'm Brent. I like to read books or watch Tv shows or anime.", "brent.jpg");
+
 	DashboardModel dash = new DashboardModel("Freelance connect is an application meant to make communication between freelancers and employers easier");
 	
 	@GetMapping("/")
 	public String Dashboard(Model model)
 	{
 		model.addAttribute("jack",jack);
+		model.addAttribute("brent",brent);
 		model.addAttribute("dash", dash);
 		return "dashboard";
 	}
@@ -33,5 +36,12 @@ public class DashboardController {
 	public String kithmal(Model model) {
 		model.addAttribute("kithmal", kithmal);
 		return "kithmal";
+	}
+	
+	@GetMapping("/brent")
+	public String Brent(Model model)
+	{
+		model.addAttribute("brent",brent);
+		return "brent";
 	}
 }
