@@ -1,6 +1,6 @@
 package com.csis3275.model;
 
-public class Dashboard_Model {
+public class DashboardModel {
 	String about;
 
 	public String getAbout() {
@@ -11,7 +11,7 @@ public class Dashboard_Model {
 		this.about = about;
 	}
 
-	public Dashboard_Model(String about) {
+	public DashboardModel(String about) {
 		super();
 		this.about = about;
 	}
