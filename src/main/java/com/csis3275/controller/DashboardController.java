@@ -3,6 +3,7 @@ package com.csis3275.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
 import com.csis3275.model.*;
 
 @Controller
@@ -19,5 +20,4 @@ public class DashboardController {
 		model.addAttribute("dash", dash);
 		return "dashboard";
 	}
-	
 }
